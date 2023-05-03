@@ -7,6 +7,65 @@
     <title>Mentoria</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Mentora</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+    <main>
+        <form id="mentorship_form" >
+            <fieldset>
+                <legend>Informações pessoais</legend>
+
+                <label for="input_name">Nome</label>
+                <input type="text" name="input_name" id="input_name">
+
+                <label for="input_surname">Sobrenome</label>
+                <input type="text" name="input_surname" id="input_surname">
+
+                <label for="input_email">Email <span>digite um e-mail válido</span></label>
+                <input type="email" name="input_email" id="input_email">
+
+                <label for="input_password">Email <span>mínimo de 6 caracteres</span></label>
+                <input type="password" name="input_password" id="input_password">
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações do mentor</legend>
+
+                <label for="mentor_name"></label>
+                <input type="text" name="mentor_name" id="mentor_name">
+            </fieldset>
+
+            <fieldset>
+                <legend>Seus horários disponíveis</legend>
+
+                <h2>Primeira mentoria</h2>
+
+                <label for="input_1st_date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="input_1st_date" id="input_1st_date">
+
+                <label for="input_1st_date_begin">Das</label>
+                <input type="time" name="input_1st_date_begin" id="input_1st_date_begin">
+
+                <label for="input_1st_date_end">Das</label>
+                <input type="time" name="input_1st_date_end" id="input_1st_date_end">
+
+                <h2>Segunda mentoria</h2>
+
+                <label for="input_2nd_date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="input_2nd_date" id="input_2nd_date">
+
+                <label for="input_2nd_date_begin">Das</label>
+                <input type="time" name="input_2nd_date_begin" id="input_2nd_date_begin">
+                
+                <label for="input_2nd_date_end">Das</label>
+                <input type="time" name="input_2nd_date_end" id="input_2nd_date_end">
+            </fieldset>
+            
+        </form>
+    </main>
+    <footer>
+        <input type="submit" form="mentorship_form" value="Salvar">
+    </footer>
 </body>
 </html>
