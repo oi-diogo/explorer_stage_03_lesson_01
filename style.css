@@ -7,15 +7,66 @@ body {
     background-color: #E5E5E5;
 }
 
-form{
-    background-color: #FAFAFC;
+body::before {
+    content: '';
+    width: 100%;
+    height: 368px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #535971;
 }
 
-form fieldset{
+header {
+    width: 750px;
+    margin: 0px auto;
+}
+
+header h1 {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #FFFFFF;
+
+}
+
+header p {
+    width: 417px;
+    margin-top: 18px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+
+#page {
+    width: 417px;
+    margin-top: 140px;
+}
+
+main {
+    width: 750px;   
+    height: 1084px;
+    margin: 38px auto 0;
+
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+}
+
+fieldset {
     border: none;
 }
 
-form fieldset legend {
+fieldset legend {
     font-family: 'Staatliches';
     font-style: normal;
     font-weight: 400;
@@ -40,4 +91,14 @@ form label span {
     line-height: 20px;
 
     color: #C1BCCC;
+}
+
+footer{
+    width: 750px;   
+    height: 160px;
+    margin: 0 auto;
+    padding: 0;
+
+    background: #535971;
+    border-radius: 0px 0px 20px 20px;
 }
