@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Mentoria</title>
 </head>
+
 <body>
     <header>
-        <h1>Mentora</h1>
+        <h1>Mentoria</h1>
         <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
     </header>
+
     <main>
-        <form id="mentorship_form" >
+        <form id="mentorship_form">
             <fieldset>
                 <legend>Informações pessoais</legend>
 
@@ -57,15 +65,16 @@
 
                 <label for="input_2nd_date_begin">Das</label>
                 <input type="time" name="input_2nd_date_begin" id="input_2nd_date_begin">
-                
+
                 <label for="input_2nd_date_end">Das</label>
                 <input type="time" name="input_2nd_date_end" id="input_2nd_date_end">
             </fieldset>
-            
         </form>
     </main>
+
     <footer>
         <input type="submit" form="mentorship_form" value="Salvar">
     </footer>
 </body>
+
 </html>
