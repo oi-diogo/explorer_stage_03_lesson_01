@@ -25,57 +25,76 @@
         <form id="mentorship_form">
             <fieldset>
                 <legend>Informações pessoais</legend>
+                <div class="col-2">
+                    <div class="input-wrapper">
+                        <label for="input_name">Nome</label>
+                        <input type="text" name="input_name" id="input_name" required>
+                    </div>
 
-                <label for="input_name">Nome</label>
-                <input type="text" name="input_name" id="input_name">
+                    <div class="input-wrapper">
+                        <label for="input_surname">Sobrenome</label>
+                        <input type="text" name="input_surname" id="input_surname">
+                    </div>
+                </div>
 
-                <label for="input_surname">Sobrenome</label>
-                <input type="text" name="input_surname" id="input_surname">
+                <label for="input_email">Email <span>(digite um e-mail válido)</span></label>
+                <input type="email" name="input_email" id="input_email" required>
 
-                <label for="input_email">Email <span>digite um e-mail válido</span></label>
-                <input type="email" name="input_email" id="input_email">
-
-                <label for="input_password">Email <span>mínimo de 6 caracteres</span></label>
-                <input type="password" name="input_password" id="input_password">
+                <label for="input_password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                <input type="password" name="input_password" id="input_password" minlength="6" required>
             </fieldset>
 
             <fieldset>
-                <legend>Informações do mentor</legend>
+                    <legend>Informações do mentor</legend>
 
-                <label for="mentor_name"></label>
-                <input type="text" name="mentor_name" id="mentor_name">
+                    <label for="mentor_Íname">Nome do seu mentor <span>(somente o primeiro nome)</span></label>
+                    <input type="text" name="mentor_name" id="mentor_name">
             </fieldset>
 
             <fieldset>
                 <legend>Seus horários disponíveis</legend>
 
                 <h2>Primeira mentoria</h2>
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="input_1st_date">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" name="input_1st_date" id="input_1st_date" required>
+                    </div>
 
-                <label for="input_1st_date">Data <span>(DD/MM/AAAA)</span></label>
-                <input type="date" name="input_1st_date" id="input_1st_date">
+                    <div class="input-wrapper">
+                        <label for="input_1st_date_begin">Das</label>
+                        <input type="time" name="input_1st_date_begin" id="input_1st_date_begin" required>
+                    </div>
 
-                <label for="input_1st_date_begin">Das</label>
-                <input type="time" name="input_1st_date_begin" id="input_1st_date_begin">
-
-                <label for="input_1st_date_end">Das</label>
-                <input type="time" name="input_1st_date_end" id="input_1st_date_end">
+                    <div class="input-wrapper">
+                        <label for="input_1st_date_end">Até</label>
+                        <input type="time" name="input_1st_date_end" id="input_1st_date_end" required>
+                    </div>
+                </div>
 
                 <h2>Segunda mentoria</h2>
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="input_2nd_date">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" name="input_2nd_date" id="input_2nd_date" required>
+                    </div>
 
-                <label for="input_2nd_date">Data <span>(DD/MM/AAAA)</span></label>
-                <input type="date" name="input_2nd_date" id="input_2nd_date">
+                    <div class="input-wrapper">
+                        <label for="input_2nd_date_begin">Das</label>
+                        <input type="time" name="input_2nd_date_begin" id="input_2nd_date_begin" required>
+                    </div>
 
-                <label for="input_2nd_date_begin">Das</label>
-                <input type="time" name="input_2nd_date_begin" id="input_2nd_date_begin">
-
-                <label for="input_2nd_date_end">Das</label>
-                <input type="time" name="input_2nd_date_end" id="input_2nd_date_end">
+                    <div class="input-wrapper">
+                        <label for="input_2nd_date_end">Até</label>
+                        <input type="time" name="input_2nd_date_end" id="input_2nd_date_end" required>
+                    </div>
+                </div>
             </fieldset>
         </form>
     </main>
 
     <footer>
-        <input type="submit" form="mentorship_form" value="Salvar">
+        <input type="submit" form="mentorship_form" id="submit-button" value="Salvar">
     </footer>
 </body>
 

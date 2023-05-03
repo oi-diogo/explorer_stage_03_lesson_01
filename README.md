@@ -2,7 +2,7 @@
 ### Challenge "Criando Formulários"
 
 ![Badge](https://img.shields.io/badge/version-1.0-green)
-![Badge](https://img.shields.io/badge/status-Development-yellow)
+![Badge](https://img.shields.io/badge/status-Done!-informational)
 
 ### This is a challenge by Rocketseat hosted in:
 https://efficient-sloth-d85.notion.site/Criando-formul-rios-462826c68ea54d61b1eff955158d1a6d
